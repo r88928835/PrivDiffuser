@@ -5,20 +5,26 @@ This repository contains the implementation of the paper entitled "PrivDiffuser:
 
 
 ## Datasets
-PrivDiffuser is evaluated on three Human Activity Recognition (HAR) datasets: MotionSense, MobiAct, and WiFi-HAR. 
-
-dataset_loader.py: contains the code to load preprocessed dataset, change the path to your local dataset before running the notebook.
-
-eval_models: contains pre-trained evaluation models.
-
-models: saves trained models, included some pre-trained model checkpoints.
-
+PrivDiffuser is evaluated on three Human Activity Recognition (HAR) datasets: MobiAct, MotionSense, and WiFi-HAR. 
 
 ## How to Use
-The jupyter notebook contians the code for obfuscating the gender attribute using the MotionSense dataset.
+The Jupyter Notebook contains the code for obfuscating the gender attribute using the MotionSense dataset.
 
 To use a different dataset, change `args.dataset` to `mobi` / `wifi` to use the MobiAct dataset or the WiFi-HAR dataset. `args.private` specifies the private attribute, the default value is `gender`, change to `weight` for weight obfuscation used in MobiAct or WiFi-HAR.
 
+Due to the file size limit, we compressed the datasets, pre-trained models, and evaluation models into a zip file (DatasetsAndModels.zip) and uploaded to an anonymous Google Drive:
+
+After downloading the zip file, unzip to get 3 folders named `eval_models`, `datasets`, and `models`. Then move them to the root directly and run the Jupyter Notebook. 
+The default path in the notebook should point to the corresponding models and datasets correctly.
+
+
+`eval_models`: contains pre-trained evaluation models.
+
+`models`: saves trained models, pre-trained model checkpoints included.
+
+`datasets`: contains pre-processed datasets for MobiAct, MotionSense, and WiFi-HAR.
+
+`dataset_loader.py`: contains the code to load the pre-processed datasets.
 
 ## Dependencies
 | Package           | Version       |
