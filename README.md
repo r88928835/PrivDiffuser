@@ -12,7 +12,7 @@ The Jupyter Notebook contains the code for obfuscating the gender attribute usin
 
 To use a different dataset, change `args.dataset` to `mobi` / `wifi` to use the MobiAct dataset or the WiFi-HAR dataset. `args.private` specifies the private attribute, the default value is `gender`, change to `weight` for weight obfuscation used in MobiAct or WiFi-HAR.
 
-Due to the file size limit, we compressed the datasets, pre-trained models, and evaluation models into a zip file (DatasetsAndModels.zip) and uploaded to an anonymous Google Drive:
+Due to the file size limit, we compressed the datasets, pre-trained models, and evaluation models into a zip file (DatasetsAndModels.zip) and uploaded to an anonymous Google Drive: https://drive.google.com/file/d/1EcL69fZsJRHVeG_a3acJghyjxSOkDtF5/view?usp=sharing
 
 After downloading the zip file, unzip to get 3 folders named `eval_models`, `datasets`, and `models`. Then move them to the root directly and run the Jupyter Notebook. 
 The default path in the notebook should point to the corresponding models and datasets correctly.
